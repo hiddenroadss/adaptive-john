@@ -1,0 +1,128 @@
+//====================================================================================================
+.info {
+	padding: 33px 0 71px 0;
+	&__container {
+		display: flex;
+		@media (max-width: $md3 + 'px') {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__content {
+		flex: 1 1 auto;
+		align-items: flex-start;
+		padding: 18px 110px 0 0;
+		*:last-child {
+			margin-bottom: 0;
+		}
+		@media (max-width: $md3 + px) {
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin: 0 0 30px 0;
+		@media (max-width: $md3 + px) {
+			margin: 0 0 21px 0;
+		}
+	}
+
+	&__text {
+		margin: 0 0 35px 0;
+		@media (max-width: $md3 + px) {
+			margin: 0 0 27px 0;
+		}
+	}
+
+	&__button {
+	}
+
+	&__avatar {
+		flex: 0 0 243px;
+		height: 243px;
+		border-radius: 50%;
+		overflow: hidden;
+		box-shadow: -5px 13px #edf7fa;
+		img {
+			max-width: 100%;
+		}
+		@media (max-width: $md3 + px) {
+			flex: 0 0 auto;
+			align-self: center;
+			width: 170px;
+			height: 170px;
+			box-shadow: -3.52px 9px #edf7fa;
+			margin: 0 0 30px 0;
+		}
+	}
+}
+//====================================================================================================
+.posts {
+	background: #edf7fa;
+	padding: 22px 0 32px 0;
+	&__heading {
+		display: flex;
+		align-items: center;
+	}
+
+	&__title {
+		flex: 1 1 auto;
+		@media (max-width: $md3 +px) {
+			text-align: center;
+		}
+	}
+
+	&__view-all {
+		flex: 0 0 auto;
+		color: #00a8cc;
+		font-size: 16px;
+		line-height: 23px;
+		@media (max-width: $md3 + px) {
+			display: none;
+		}
+	}
+
+	&__list {
+		display: flex;
+		@media (max-width: $md3 + px) {
+			flex-direction: column;
+		}
+	}
+
+	&__post {
+		flex: 0 0 calc(50% - 10px);
+		&:not(:nth-child(2n)) {
+			margin: 0 20px 0 0;
+		}
+
+		@media (max-width: $md3 + px) {
+			flex: 0 0 100%;
+			&:not(:nth-child(2n)) {
+				margin: 0 0 17px 0;
+			}
+		}
+	}
+}
+//=========================================================================================================================================
+.featured-works {
+	padding: 15px 0 25px 0;
+	&__title {
+		@media (max-width: $md3 + px) {
+			text-align: center;
+		}
+	}
+}
+//======================================================================
+.footer {
+	padding: 50px 0;
+	&__socials {
+		margin: 0 0 25px 0;
+	}
+
+	&__copyrights {
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+	}
+}
